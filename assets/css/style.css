@@ -1,0 +1,146 @@
+@import url(../css/reset.css);
+
+body {
+    background-color: #0E0E0E;
+}
+
+/*HEADER*/
+.conteudo-cabecalho {
+    max-width: 1980px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #070707;
+    padding: 1rem 6%;
+    margin: 0 auto;
+    box-shadow: 0 5px 16px #0000002b;
+}
+.conteudo-esquerda {
+    width: 25%;
+}
+.conteudo-esquerda img {
+    height: 3.5rem;
+}
+.conteudo-direita {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 75%;
+    gap: 2rem;
+}
+.conteudo-direita ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+.conteudo-direita a {
+    color: #fff;
+    transition: 0.2s;
+}
+.conteudo-direita a:hover{
+    color: #C22121;
+}
+.conteudo-direita img {
+    height: 2rem;
+}
+/*FIM HEADER*/
+
+/*MAIN*/
+
+/*BOTÃO WHATSAPP*/
+.botao-fixo {
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    background-color: rgba(217, 217, 217, 0.5);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 20%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    transition: 0.2s;
+}
+.botao-fixo:hover {
+    background-color: #D9D9D9;
+    color: #C22121;
+}
+/*FIM BOTÃO WHATSAPP*/
+
+/*INTRODUÇÃO*/
+.conteudo-introducao {
+    max-width: 1980px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 10%;
+    margin: 0 auto;
+}
+.conteudo-esquerdo-introducao {
+    width: 31rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+h1 {
+    font-size: 5.5rem;
+    text-shadow: 3px 5px #C22121;
+}
+.btn-comecar {
+    background-color: transparent;
+    color: #C22121;
+    border: 2px solid #C22121;
+    font-size: 2.5rem;
+    max-width: 20rem;
+    padding: 1rem 10%;
+    transition: 0.3s;
+}
+.btn-comecar:hover {
+    background-color: #701F1F;
+    color: #DADADA;
+}
+/*FIM INTRODUÇÃO*/
+
+/*CARACTERÍSTICAS DOS ATLETAS*/
+.conteudo-caracteristicas {
+    background-image: url(../image/background-red-section01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1550px;
+    width: 100%;
+    height: 50rem;
+    margin: -2rem 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.conteudo-caracteristicas h2{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.items {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.caracteristica-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15rem;
+    gap: 1rem;
+}
+.caracteristica-item img{
+    height: 7.5rem;
+}
+.caracteristica-item p{
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;
+}
+/*FIM CARACTERÍSTICAS DOS ATLETAS
+
+/*FIM MAIN*/

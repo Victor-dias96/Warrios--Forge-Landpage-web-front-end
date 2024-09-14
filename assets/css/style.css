@@ -172,6 +172,17 @@ h1 {
 
 }
 
+iframe {
+    display: block; /* Garante que a margem tenha efeito se o iframe estiver dentro de um elemento inline */
+    margin-left: auto; /* Empurra o iframe para a direita */
+    margin-right: 3%; /* Ajuste o valor conforme necessário para centralizar parcialmente à direita */
+}
+.container {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-between; /* Ajusta a distância entre os itens */
+}
+
 /*FIM PROGRAMA DE ATLETAS*/
 
 /*FIM MAIN*/

@@ -130,7 +130,7 @@ h1 {
     max-width: 1550px;
     width: 100vw;
     height: 800px;
-    margin: -2rem auto;
+    margin: -2rem auto 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,7 +166,7 @@ h1 {
 /*PROGRAMA DE ATLETAS*/
 .programa-atletas {
     display: flex;
-    gap: 3rem;
+    gap: 6rem;
     justify-content: center;
 }
 .programa-titulo {
@@ -180,6 +180,7 @@ h1 {
 
 /*HISTÓRIAS DE ATLETAS*/
 .container {
+    margin: 20px 5%;
     display: flex;
     align-items: center; /* Alinha os itens verticalmente no centro */
     justify-content: center; /* Ajusta a distância entre os itens */
@@ -204,12 +205,12 @@ h1 {
     font-size: 40px;
     text-align: center;
     padding: 10px; 
-    margin: 20px; 
+    margin: 60px; 
     border-radius: 8px;
+    text-shadow: 1px 3px #C22121;
 }
 .grupo-atletas {
     display: block;
-    
     margin: auto;
 }
 /*FIM MODALIDADES*/

@@ -1,6 +1,6 @@
-# *Warrior's Forge - Landing Page de Saúde*
+# Warrior's Forge - Landing Page de Saúde
 
-## *Descrição do Projeto*
+## Descrição do Projeto
 
 Este projeto consiste na criação de uma landing page com foco em saúde e bem-estar, parte de um trabalho acadêmico de Programação Web-Frontend. A página é voltada para a apresentação de programas de treinamento físico e acompanhamento personalizado para atletas e praticantes de atividades físicas, com o objetivo de promover o bem-estar físico e mental.
 

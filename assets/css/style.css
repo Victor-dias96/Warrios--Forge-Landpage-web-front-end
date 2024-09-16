@@ -5,14 +5,21 @@ body {
 }
 
 /*HEADER*/
+header {
+    display: flex;
+    justify-content: center;
+}
 .conteudo-cabecalho {
     max-width: 1980px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     background-color: #070707;
     padding: 1rem 6%;
     margin: 0 auto;
     box-shadow: 0 5px 16px #0000002b;
+    position: fixed;
+    z-index: 10;
 }
 .conteudo-esquerda {
     width: 25%;
@@ -41,10 +48,22 @@ body {
 }
 .conteudo-direita img {
     height: 2rem;
+    transition: 0.2s;
 }
+.conteudo-direita img:hover {
+    background-color: #C22121;
+    border-radius: 50%;
+}
+
 /*FIM HEADER*/
 
 /*MAIN*/
+
+/*Adaptando o main por conta do position: fixed; do header*/
+main, footer {
+    position: relative;
+    top: 6rem;
+}
 
 /*BOTÃO WHATSAPP*/
 .botao-fixo {
@@ -61,6 +80,7 @@ body {
     border: none;
     border-radius: 2rem;
     transition: 0.2s;
+    z-index: 10;
 }
 .botao-fixo:hover {
     background-color: #D9D9D9;
@@ -108,9 +128,9 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1550px;
-    width: 100%;
-    height: 50rem;
-    margin: -2rem 0 auto;
+    width: 100vw;
+    height: 800px;
+    margin: -2rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,57 +164,203 @@ h1 {
 /*FIM CARACTERÍSTICAS DOS ATLETAS
 
 /*PROGRAMA DE ATLETAS*/
-
 .programa-atletas {
-    font-weight:normal;
-    font-family:'Raleway', sans-serif;
     display: flex;
-    gap: 15rem;
-
-    margin-left: 230px;
+    gap: 3rem;
+    justify-content: center;
 }
-
 .programa-titulo {
     font-size: 3rem;
-
-    margin-top: 30px;
     margin-bottom: 30px;
 }
-
 .programa-lista {
     font-size: 1.3rem;
-
-    margin-left: 20px;
 }
+/*FIM PROGRAMA DE ATLETAS*/
 
-.titulo-lista {
-    flex-direction: column;
-
-}
-
-iframe {
-    display: block; /* Garante que a margem tenha efeito se o iframe estiver dentro de um elemento inline */
-    margin-left: auto; /* Empurra o iframe para a direita */
-    margin-right: 3%; /* Ajuste o valor conforme necessário para centralizar parcialmente à direita */
-}
+/*HISTÓRIAS DE ATLETAS*/
 .container {
     display: flex;
     align-items: center; /* Alinha os itens verticalmente no centro */
-    justify-content: space-between; /* Ajusta a distância entre os itens */
+    justify-content: center; /* Ajusta a distância entre os itens */
+    gap: 2rem;
 }
-#modas {
+.meuH2 {
+    margin: 100px 0px 100px 40px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 84px;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #A01B1B, #5B1010);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #333;
+    display: inline-block;
+}
+/*FIM HISTÓRIAS DE ATLETAS*/
+
+/*MODALIDADES*/
+.modalidades {
     font-size: 40px;
     text-align: center;
     padding: 10px; 
     margin: 20px; 
     border-radius: 8px;
 }
-
 .grupo-atletas {
     display: block;
     
     margin: auto;
 }
-/*FIM PROGRAMA DE ATLETAS*/
+/*FIM MODALIDADES*/
+
+/*SUA TRANSFORMAÇÃO*/
+.interface {
+    background-image: url(../image/background-red-section02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1550px;
+    width: 100vw;
+    height: 900px;
+    margin: -2rem auto 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alinhar-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+}
+.interface h2{
+    font-size: 5rem;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+}
+.interface p{
+    font-size: 1.5rem;
+    width: 70%;
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+.interface button{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 40rem;
+    padding: 1rem 5%;
+}
+.interface button:hover{
+    background-color: rgba(218, 218, 218, 0.5);
+    text-shadow: 1px 3px #C22121;
+}
+/*FIM SUA TRANSFORMAÇÃO*/
 
 /*FIM MAIN*/
+
+/*FOOTER*/
+
+footer {
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 900;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 25px 10px;
+    border-radius: 15px; 
+    gap: 1rem;
+} 
+.footer-icones{
+    display: flex;
+    width: 6rem;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+.footer-link i{
+    margin-top: 1rem;
+    gap: 1rem;
+    height: auto;
+    width: auto;
+    color: #000;
+}
+.footer-link i:hover{
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+.contact-button{
+    background-color: #D52E2E;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.contact-button:hover{
+    opacity: 0.8;
+    transition: all 0.4s;
+    color: black;
+}
+.logo-section {
+    text-align: center;
+    padding: 20px;
+}
+.logo-section {
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    padding: 5px 10px;
+    background-color: #050505;
+}
+.logo-section img{
+    height: 70px;
+    width: 70px;
+}
+
+/*FIM FOOTER*/

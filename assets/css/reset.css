@@ -7,17 +7,3 @@
     box-sizing: border-box;
     color: #DADADA;
 }
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap');
-#meuH3 {
-    font-family: 'Raleway';
-    margin: 380px 0px 320px 40px;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 84px;
-    font-weight: 700;
-    background: linear-gradient(90deg, #A01B1B, #5B1010);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #333;
-    display: inline-block;
-}
